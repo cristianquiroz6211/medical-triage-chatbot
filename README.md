@@ -2,10 +2,11 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.49.0-red.svg)](https://streamlit.io/)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Transformers-yellow)](https://huggingface.co/)
+[![spaCy](https://img.shields.io/badge/spaCy-NLP-09A3D5.svg)](https://spacy.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E.svg)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Un sistema inteligente de clasificación de triaje médico que utiliza **Inteligencia Artificial** y **Procesamiento de Lenguaje Natural** para evaluar síntomas y determinar la prioridad de atención en servicios de urgencias hospitalarias.
+Un sistema inteligente de clasificación de triaje médico que utiliza **Procesamiento de Lenguaje Natural** y **técnicas de Machine Learning** para evaluar síntomas y determinar la prioridad de atención en servicios de urgencias hospitalarias.
 
 ![Demo](https://img.shields.io/badge/Demo-Streamlit%20App-brightgreen)
 
@@ -14,8 +15,8 @@ Un sistema inteligente de clasificación de triaje médico que utiliza **Intelig
 Este chatbot médico revoluciona el proceso de triaje hospitalario mediante:
 
 ### 🎯 Funcionalidades Principales
-- **🔍 Análisis de Síntomas**: Procesamiento inteligente de texto en lenguaje natural
-- **🧠 Predicción de Enfermedades**: IA entrenada con base de conocimiento médico
+- **🔍 Análisis de Síntomas**: Procesamiento de texto con spaCy y matching inteligente
+- **🧠 Predicción de Enfermedades**: Base de conocimiento médico con algoritmos de coincidencia
 - **🚨 Clasificación de Triaje**: Sistema automatizado de 5 niveles de prioridad
 - **💡 Recomendaciones Médicas**: Consejos personalizados según severidad
 - **📊 Interfaz Interactiva**: Dashboard web con métricas en tiempo real
@@ -156,12 +157,12 @@ print(f"Triaje: Nivel {triage['triage_level']} - {triage['triage_name']}")
 
 ## 🔬 Tecnologías Utilizadas
 
-### Backend & AI
+### Backend & NLP
 - **Python 3.8+** - Lenguaje principal
-- **Hugging Face Transformers** - Modelos de IA pre-entrenados
 - **spaCy** - Procesamiento de lenguaje natural en español
-- **scikit-learn** - Machine learning y clasificación
-- **NLTK & TextBlob** - Análisis de texto adicional
+- **scikit-learn** - Machine learning y algoritmos de clasificación
+- **TextBlob** - Análisis de sentimientos y polaridad de texto
+- **NLTK** - Herramientas adicionales de procesamiento de texto
 
 ### Frontend & Visualización
 - **Streamlit** - Interfaz web interactiva
@@ -175,11 +176,12 @@ print(f"Triaje: Nivel {triage['triage_level']} - {triage['triage_name']}")
 
 ## 📊 Métricas del Sistema
 
-- **Precisión en Triaje**: 85%+ en casos de prueba
-- **Base de Conocimiento**: 12+ enfermedades comunes
-- **Categorías de Síntomas**: 5 sistemas principales
-- **Tiempo de Respuesta**: < 2 segundos
-- **Idioma**: Español (con soporte para inglés)
+- **Algoritmo de Matching**: Coincidencia inteligente de síntomas
+- **Base de Conocimiento**: 13+ enfermedades comunes categorizadas
+- **Categorías de Síntomas**: 5 sistemas principales (cardiovascular, respiratorio, etc.)
+- **Tiempo de Respuesta**: < 1 segundo
+- **Idioma**: Español (con capacidad de expansión multilingual)
+- **Método de Predicción**: Matching manual con scoring de probabilidades
 
 ## 🤝 Contribuir
 
@@ -197,12 +199,12 @@ Abre un [Issue](https://github.com/cristianquiroz6211/medical-triage-chatbot/iss
 
 ## 📈 Roadmap
 
-- [ ] **v2.0**: Integración con APIs médicas externas
+- [ ] **v2.0**: Integración con modelos de ML más avanzados (Deep Learning)
 - [ ] **v2.1**: Soporte multiidioma (inglés, francés)
 - [ ] **v2.2**: Módulo de signos vitales
-- [ ] **v2.3**: Historial de pacientes
+- [ ] **v2.3**: Historial de pacientes y learning automático
 - [ ] **v2.4**: API REST para integración hospitalaria
-- [ ] **v2.5**: Modelo entrenado con datasets médicos masivos
+- [ ] **v2.5**: Modelo entrenado con datasets médicos masivos y Transformers
 
 ## 📄 Licencia
 
@@ -218,8 +220,8 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 
 ## 🙏 Agradecimientos
 
-- **Hugging Face** por los modelos de IA médica
 - **spaCy** por el procesamiento de lenguaje natural
+- **scikit-learn** por los algoritmos de machine learning
 - **Streamlit** por la interfaz web
 - **Comunidad médica** por validación de protocolos de triaje
 
@@ -227,7 +229,7 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 
 <div align="center">
 
-**🏥 Salvando vidas con Inteligencia Artificial 🏥**
+**🏥 Salvando vidas con tecnología accesible 🏥**
 
 [![GitHub stars](https://img.shields.io/github/stars/cristianquiroz6211/medical-triage-chatbot?style=social)](https://github.com/cristianquiroz6211/medical-triage-chatbot/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/cristianquiroz6211/medical-triage-chatbot?style=social)](https://github.com/cristianquiroz6211/medical-triage-chatbot/network/members)
